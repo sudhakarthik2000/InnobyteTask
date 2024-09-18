@@ -1,0 +1,434 @@
+/* style.css */
+
+body {
+    scroll-behavior: smooth;
+    background: linear-gradient(135deg, #f3f4f6, #e0e7ff);
+   
+}
+
+.hero-image {
+    background-image: url('./assests/ayodhya.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3.5s ease-out forwards;
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1.2s ease-out forwards;
+}
+
+.pulse-animation {
+    animation: pulse 2s infinite;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.9;
+    }
+}
+
+/* Custom font styles */
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero-subtitle {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Button Hover Effect */
+.btn-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------contact section---------------- */
+
+/* Global styles for the contact section */
+.contact-section {
+    display: flex;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contact-section:hover {
+    transform: translateY(-5px);
+}
+
+.contact-info {
+    color: #333;
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 26px;
+    transition: color 0.3s ease;
+}
+
+.contact-info h2:hover {
+    color: #2563eb;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #475569;
+}
+
+.contact-info a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #1e293b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    background-color: #2563eb;
+}
+
+.social-icon img {
+    width: 22px;
+    height: 22px;
+    filter: invert(1);
+}
+
+.message-form {
+    flex: 2;
+    color: #1e293b;
+}
+
+.message-form h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 26px;
+    transition: color 0.3s ease;
+}
+
+.message-form h2:hover {
+    color: #2563eb;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+}
+
+.input-box {
+    position: relative;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    color: #1e293b;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0px 0px 5px rgba(37, 99, 235, 0.5);
+}
+
+.input-box label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 14px;
+    color: #94a3b8;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.input-box input:focus + label,
+.input-box textarea:focus + label,
+.input-box input:valid + label,
+.input-box textarea:valid + label {
+    top: -10px;
+    left: 15px;
+    font-size: 12px;
+    color: #2563eb;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #2563eb, #1e40af);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e40af, #2563eb);
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info {
+        padding-right: 0;
+        padding-bottom: 20px;
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+
+
+/* about section */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-left {
+    transform: translateX(-20px);
+    opacity: 0;
+    animation: slideLeft 1s ease-out forwards;
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+}
+
+.zoom-in {
+    transform: scale(0.95);
+    opacity: 0;
+    animation: zoomIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Button Hover Effect */
+.btn-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Hover Effect */
+.img-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* living rom */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.zoom-in {
+    transform: scale(0.95);
+    opacity: 0;
+    animation: zoomIn 1s ease-out forwards;
+}
+
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+
+/* service */
+
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Hover effects for service items */
+.service-icon {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* previous  next slides */
+
+
+
+.carousel-slide {
+    flex: 0 0 100%; /* Each slide takes up the full width of the container */
+}
+
+#carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Full width for carousel wrapper */
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}

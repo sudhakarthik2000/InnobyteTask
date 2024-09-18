@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Sukh Guest House</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.js">
+
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        a {
+            cursor: pointer; 
+        }    
+
+    </style>
+    
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+
+    <header class="bg-white shadow-lg fixed w-full z-10 top-0">
+      
+        <div class="container mx-auto flex items-center justify-between py-4 px-6">
+            <a href="#" class="text-2xl font-extrabold text-gray-800 tracking-wide hover:text-pink-600 transition duration-300">
+                King Sukh Guest House
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#home" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">Home</a></li>
+                    <li><a href="#about" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">About</a></li>
+                    <li><a href="#services" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">Services</a></li>
+                    <li><a href="#rooms" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">Rooms</a></li>
+                    <li><a href="#gallery" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">Gallery</a></li>
+                    <li><a href="#contact" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">Contact</a></li>
+                    <li><a href="#testimonials" class="text-lg font-medium text-gray-700 hover:text-pink-600 transition duration-300">Review</a></li>
+
+                </ul>
+            </nav>
+            <a href="https://wa.me/919007062180" id="bookNow" class="hidden md:inline-block px-6 py-2 bg-pink-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-pink-700 transition duration-300">
+                Book Now
+            </a>
+
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image h-screen relative flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="relative z-10 text-center fade-in">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4 transition-transform transform hover:scale-105">
+                Make Yourself At Home<br>
+                In Our <span class="text-pink-500">Guest House.</span>
+            </h1>
+            <p class="mt-4 text-lg text-gray-300 slide-up">Simple - Unique - Friendly</p>
+            <a href="https://wa.me/919007062180" id="bookNow" class="inline-block px-6 py-3 bg-pink-600 text-white text-lg font-medium rounded-full shadow-lg hover:bg-pink-700 hover:shadow-xl transition duration-300 mt-6">
+                Book Now
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <!-- Image Section -->
+            <div class="md:w-1/2 zoom-in">
+                <img src="./assests/out.jpg" alt="King Sukh Guest House" class="rounded-lg shadow-lg img-hover transition-transform transform hover:scale-105">
+            </div>
+
+            <!-- Content Section -->
+            <div class="md:w-1/2 md:ml-12 mt-8 md:mt-0 slide-left">
+                <h3 class="text-sm font-semibold text-red-600 uppercase tracking-wide mb-2">About Us</h3>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6 leading-tight">The Best Holidays Start Here!</h2>
+                <p class="text-lg text-gray-700 mb-6">
+                    Embark on a tranquil journey at our Kingsukh Guest House, enveloped by the scenic allure of Biharinath Hill, Baranti Hill, Susunia Hill, Joychandi Hill, Garhpanchkot, Baranti Dam, Maithon Dam, and the captivating Panchat Dam. Revel in the embrace of comfort, relish delightful meals, and unwind in our verdant garden oasis. Your ideal retreat beckons, promising a harmonious blend of nature's beauty and heartfelt hospitality. Explore the hidden gems of Purulia, creating memories that linger long after your stay.
+                </p>
+                
+                <!-- Additional Content with Animations -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-3">Why Choose Us?</h3>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li class="flex items-center fade-in">
+                            <svg class="w-6 h-6 text-pink-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Scenic Location</span>
+                        </li>
+                        <li class="flex items-center fade-in" style="animation-delay: 0.3s;">
+                            <svg class="w-6 h-6 text-pink-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 2"></path></svg>
+                            <span>Exceptional Service</span>
+                        </li>
+                        <li class="flex items-center fade-in" style="animation-delay: 0.6s;">
+                            <svg class="w-6 h-6 text-pink-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            <span>Delicious Meals</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <p class="text-lg text-gray-900 font-semibold mb-6">
+                    <span class="block">Address: Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</span>
+                    <span class="block">Contact us: +91 9007062180</span>
+                </p>
+                <a href="https://wa.me/919007062180" id="bookNow" class="inline-block px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 text-white text-lg font-medium rounded-full btn-hover mt-6">
+                    Book Now
+                </a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- living room -->
+    <section id="rooms" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h3 class="text-sm font-semibold text-red-500 uppercase tracking-wide text-center fade-in">Our Living Rooms</h3>
+            <h2 class="text-4xl font-bold text-gray-900 text-center mt-2 mb-10 leading-tight fade-in" style="animation-delay: 0.3s;">
+                The Most Memorable Rest Time Starts Here.
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover zoom-in" style="animation-delay: 0.5s;">
+                    <img src="./assests/small.jpg" alt="Cozy Haven Room" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Cozy Haven Room</h3>
+                        <p class="text-gray-600 mb-4">
+                            Escape to comfort in our Cozy Haven Room, a snug retreat designed for intimate relaxation.
+                        </p>
+                        <p class="text-gray-900 font-semibold mb-4">Starting from <span class="text-pink-600">Rs. 1000/night</span></p>
+                        <a href="https://wa.me/919007062180" class="inline-block px-6 py-2 bg-pink-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-pink-700 transition duration-300">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover zoom-in" style="animation-delay: 0.7s;">
+                    <img src="./assests/large.jpg" alt="Spacious Serenity Suite" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Spacious Serenity Suite</h3>
+                        <p class="text-gray-600 mb-4">
+                            Indulge in luxury and ample space in our Spacious Serenity Suite, where tranquility meets roomy elegance.
+                        </p>
+                        <p class="text-gray-900 font-semibold mb-4">Starting from <span class="text-pink-600">Rs. 1500/night</span></p>
+                        <a href="https://wa.me/919007062180" class="inline-block px-6 py-2 bg-pink-600 text-white text-lg font-medium rounded-full shadow-md hover:bg-pink-700 transition duration-300">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="container mx-auto flex flex-col md:flex-row items-center">
+                <!-- Image Section -->
+                <div class="md:w-1/2 w-full flex justify-center mb-10 md:mb-0 fade-in">
+                    <img src="./assests/palash.webp" alt="Services Image" class="rounded-lg shadow-lg w-full object-cover max-w-md">
+                </div>
+    
+                <!-- Text Section -->
+                <div class="md:w-1/2 md:pl-10 w-full text-center md:text-left slide-up">
+                    <h3 class="text-sm font-semibold text-red-500 uppercase tracking-wide mb-2">Our Services</h3>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">Strive Only For The Best.</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center justify-center md:justify-start">
+                            <span class="inline-block w-12 h-12 bg-blue-100 text-blue-500 rounded-full flex items-center justify-center mr-4 service-icon">
+                                <i class="fa-solid fa-shield fa-lg"></i>
+                            </span>
+                            <span class="text-lg font-medium text-gray-800">High Class Security</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <span class="inline-block w-12 h-12 bg-pink-100 text-pink-500 rounded-full flex items-center justify-center mr-4 service-icon">
+                                <!-- <img src="./assets/room-service-icon.svg" alt="Room Service Icon" class="w-8 h-8"> -->
+                            </span>
+                            <span class="text-lg font-medium text-gray-800">24 Hours Room Service</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <span class="inline-block w-12 h-12 bg-purple-100 text-purple-500 rounded-full flex items-center justify-center mr-4 service-icon">
+                                <i class="fa-solid fa-utensils fa-lg"></i>
+                            </span>
+                            <span class="text-lg font-medium text-gray-800">Restaurant</span>
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <span class="inline-block w-12 h-12 bg-red-100 text-red-500 rounded-full flex items-center justify-center mr-4 service-icon">
+                                <!-- <img src="./assets/tourist-guide-icon.svg" alt="Tourist Guide Icon" class="w-8 h-8"> -->
+                            </span>
+                            <span class="text-lg font-medium text-gray-800">Tourist Guide Support</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+        <!-- Achievements Section -->
+<section id="achievements" class="py-20 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12">Our Achievements</h2>
+        <div class="flex flex-wrap justify-center items-center">
+            <!-- Bookings Completed -->
+            <div class="w-full md:w-1/3 px-4 mb-8 md:mb-0">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="inline-block w-16 h-16 bg-green-100 text-green-500 rounded-full flex items-center justify-center">
+                            <!-- Custom Icon -->
+                        </span>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-2">100+</h3>
+                    <p class="text-lg text-gray-600">Bookings Completed</p>
+                </div>
+            </div>
+            <!-- Happy Customers -->
+            <div class="w-full md:w-1/3 px-4 mb-8 md:mb-0">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="flex items-center justify-center mb-4">
+                        <span class="inline-block w-16 h-16 bg-yellow-100 text-yellow-500 rounded-full flex items-center justify-center">
+                           
+                           
+                        </span>
+                    </div>
+                    <h3 class="text-4xl font-bold text-gray-900 mb-2">150+</h3>
+                    <p class="text-lg text-gray-600">Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-10">Gallery</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <img src="./assests/out.jpg" alt="Gallery Image 1" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/1.jpg" alt="Gallery Image 2" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/baranti.webp" alt="Gallery Image 3" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/flower.jpg" alt="Gallery Image 1" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/recep.jpg" alt="Gallery Image 2" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/service.jpg" alt="Gallery Image 3" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/large.jpg" alt="Gallery Image 3" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/palash.webp" alt="Gallery Image 3" class="w-full h-64 object-cover rounded shadow">
+                <img src="./assests/small.jpg
+                " alt="Gallery Image 3" class="w-full h-64 object-cover rounded shadow">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-gradient-to-r from-blue-100 via-green-100 to-yellow-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-extrabold mb-12 text-gray-800 tracking-tight">What Our Guests Say</h2>
+            <div class="relative flex items-center justify-center">
+                <!-- Previous Button -->
+                <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    <span class="sr-only">Previous</span>
+                </button>
+                <!-- Carousel Container -->
+                <div id="carousel" class="overflow-hidden flex w-full max-w-4xl mx-auto">
+                    <!-- Carousel Wrapper -->
+                    <div class="flex transition-transform duration-500 ease-in-out w-full" id="carousel-wrapper">
+                        <!-- Testimonial Slide 1 -->
+                        <div class="carousel-slide flex-shrink-0 w-full">
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4">
+                                    <img src="./assests/small.jpg" alt="Guest 1" class="w-12 h-12 rounded-full object-cover mr-4">
+                                    <div>
+                                        <p class="text-gray-700 text-lg leading-relaxed mb-2">"Amazing stay! The rooms were clean and the staff was very friendly. The location was perfect for exploring the city."</p>
+                                        <div class="flex items-center">
+                                            <!-- Star Rating 5/5 -->
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">- Guest 1</h3>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slide 2 -->
+                        <div class="carousel-slide flex-shrink-0 w-full">
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4">
+                                    <img src="assests/room1.jpg" alt="Guest 2" class="w-12 h-12 rounded-full object-cover mr-4">
+                                    <div>
+                                        <p class="text-gray-700 text-lg leading-relaxed mb-2">"A beautiful guest house with excellent amenities. "</p>
+                                        <div class="flex items-center">
+                                            <!-- Star Rating 4/5 -->
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">- Guest 2</h3>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slide 3 -->
+                        <div class="carousel-slide flex-shrink-0 w-full">
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4">
+                                    <img src="assests/palash.webp" alt="Guest 3" class="w-12 h-12 rounded-full object-cover mr-4">
+                                    <div>
+                                        <p class="text-gray-700 text-lg leading-relaxed mb-2">"A truly memorable experience! The location was perfect and the service outstanding.  but overall fantastic."</p>
+                                        <div class="flex items-center">
+                                            <!-- Star Rating 5/5 -->
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">- Guest 3</h3>
+                            </div>
+                        </div>
+                        <!-- Testimonial Slide 4 -->
+                        <div class="carousel-slide flex-shrink-0 w-full">
+                            <div class="bg-white p-8 rounded-lg shadow-lg">
+                                <div class="flex items-center mb-4">
+                                    <img src="assests/ayodhya.webp" alt="Guest 4" class="w-12 h-12 rounded-full object-cover mr-4">
+                                    <div>
+                                        <p class="text-gray-700 text-lg leading-relaxed mb-2">"Exceptional quality and comfort. I will definitely come back! However, the breakfast options are excellent."</p>
+                                        <div class="flex items-center">
+                                            <!-- Star Rating 4/5 -->
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.214-6 5.846 1.414 8.244-7.414-3.893-7.414 3.893 1.414-8.244-6-5.846 8.332-1.214z"></path></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">- Guest 4</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Next Button -->
+                <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 px-4 py-2 bg-gray-800 text-white rounded-full hover:bg-gray-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    <span class="sr-only">Next</span>
+                </button>
+            </div>
+            <div class="mt-12">
+                <h4 class="text-xl font-semibold text-gray-800">Share Your Experience</h4>
+                <p class="text-gray-600 mb-4">We would love to hear from you! Click the button below to leave your own review.</p>
+                <a href="#contact" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition duration-300">Leave a Review</a>
+            </div>
+        </div>
+    </section>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const slides = document.querySelectorAll('.carousel-slide');
+                const prevButton = document.getElementById('prev');
+                const nextButton = document.getElementById('next');
+                const carouselWrapper = document.getElementById('carousel-wrapper');
+                let currentIndex = 0;
+            
+                function updateSlidePositions() {
+                    const offset = -currentIndex * 100; // Move slides by 100% of their width
+                    carouselWrapper.style.transform = `translateX(${offset}%)`;
+                }
+            
+                prevButton.addEventListener('click', () => {
+                    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+                    updateSlidePositions();
+                });
+            
+                nextButton.addEventListener('click', () => {
+                    currentIndex = (currentIndex + 1) % slides.length;
+                    updateSlidePositions();
+                });
+            
+                // Initialize the carousel
+                updateSlidePositions();
+            });
+            </script>
+            
+    
+        
+    
+    
+    
+    
+    
+
+   
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="contact-info">
+        <h2>Contact Info</h2>
+        <p><strong>Address:</strong> Beside Barshal Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+        <p><strong>Email:</strong> kkghosh0099@gmail.com</p>
+        <p><strong>Phone:</strong> +91 9007062180</p>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><img src="./assests/facebook.png" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="assests/instagram.png" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="assests/twitter.png" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="assests/youtube.png" alt="LinkedIn"></a>
+        </div>
+    </div>
+    <div class="message-form">
+        <h2>Send a Message</h2>
+        <form action="#">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" name="first-name" id="first-name" required>
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="input-box">
+                    <input type="text" name="last-name" id="last-name" required>
+                    <label for="last-name">Last Name</label>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email Address</label>
+            </div>
+            <div class="input-box">
+                <input type="text" name="phone" id="phone" required>
+                <label for="phone">Mobile Number</label>
+            </div>
+            <div class="input-box">
+                <textarea name="message" id="message" rows="4" required></textarea>
+                <label for="message">Write your message here...</label>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+
+  <!-- Footer -->
+<footer class="bg-gray-900 text-gray-200">
+    <!-- GPS Location Map -->
+    <div class="w-full">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.501598139109!2d86.85721547484084!3d23.586337295055948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f6e3fdd3ff9ebb%3A0x517a57e3f93c1807!2sKingsukh%20Guest%20House!5e0!3m2!1sen!2sin!4v1724655297961!5m2!1sen!2sin" 
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="container mx-auto py-8 px-4 md:px-0">
+        <div class="flex flex-col md:flex-row justify-between">
+            <!-- Kingsukh Guest House -->
+            <div class="mb-6 md:mb-0 md:w-1/4">
+                <h4 class="font-bold text-lg">Kingsukh Guest House</h4>
+                <p>Beside Barshat Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+                <p>Email: <a href="mailto:kkghash009@gmail.com" class="text-blue-400">kkghash009@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919007062180" class="text-blue-400">+91 9007062180</a></p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="mb-6 md:mb-0 md:w-1/4">
+                <h4 class="font-bold text-lg">Quick Links</h4>
+                <ul>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Browse Destinations</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Special Offers & Packages</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Room Types & Amenities</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Customer Reviews & Ratings</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Travel Tips & Guides</a></li>
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div class="mb-6 md:mb-0 md:w-1/4">
+                <h4 class="font-bold text-lg">Our Services</h4>
+                <ul>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Concierge Assistance</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Flexible Booking Options</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Airport Transfers</a></li>
+                    <li><a href="#" class="text-blue-400 hover:text-white">Wellness & Recreation</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="md:w-1/4">
+                <h4 class="font-bold text-lg">Contact Us</h4>
+                <p>Beside Barshat Water Tank, Manpur, Barhanti, West Bengal 723156</p>
+                <p>Email: <a href="mailto:kkghash009@gmail.com" class="text-blue-400">kkghash009@gmail.com</a></p>
+                <p>Phone: <a href="tel:+919007062180" class="text-blue-400">+91 9007062180</a></p>
+                <div class="flex space-x-4 mt-4">
+                    <a href="#" class="text-blue-500 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-pink-500 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-blue-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-700 py-4 text-center">
+        <p>&copy; 2024 Kingsukh Guest House. All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+
+
+<script>
+
+
+    // Smooth Scrolling for Anchor Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Sticky Navigation
+window.addEventListener('scroll', function () {
+    const nav = document.querySelector('.nav');
+    if (window.scrollY > 50) {
+        nav.classList.add('sticky-nav');
+    } else {
+        nav.classList.remove('sticky-nav');
+    }
+});
+
+// Form Validation
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('.message-form');
+    const inputs = form.querySelectorAll('input, textarea');
+    
+    form.addEventListener('submit', (e) => {
+        let valid = true;
+        inputs.forEach(input => {
+            if (!input.value) {
+                input.classList.add('error');
+                valid = false;
+            } else {
+                input.classList.remove('error');
+            }
+        });
+        
+        if (!valid) {
+            e.preventDefault();
+            alert('Please fill in all fields.');
+        }
+    });
+});
+
+// Scroll Animations
+document.addEventListener('scroll', () => {
+    const elements = document.querySelectorAll('.fade-in, .slide-up, .zoom-in, .slide-left');
+    elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+            el.classList.add('visible');
+        }
+    });
+});
+
+</script>
+
+</body>
+</html>
